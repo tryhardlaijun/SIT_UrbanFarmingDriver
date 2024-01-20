@@ -11,9 +11,9 @@ void UltrasonicSensor::begin() {
 
 float UltrasonicSensor::readDistance() {
     digitalWrite(trigPin, LOW);
-    delayMicroseconds(2);
+    delayMicroseconds(15);
     digitalWrite(trigPin, HIGH);
-    delayMicroseconds(10);
+    delayMicroseconds(40);
     digitalWrite(trigPin, LOW);
 
     float duration = pulseIn(echoPin, HIGH);
