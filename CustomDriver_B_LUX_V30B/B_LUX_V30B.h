@@ -8,7 +8,7 @@
 
 class LightSensor {
     public:
-        LightSensor(uint8_t cEN, uint8_t scl = SCL, uint8_t sda = SDA);
+        LightSensor(uint8_t scl = SCL, uint8_t sda = SDA);
 
         void begin();
         float readLux();

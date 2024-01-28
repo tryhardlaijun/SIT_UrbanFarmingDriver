@@ -1,8 +1,9 @@
 // LightSensor.cpp
 #include "B_LUX_V30B.h"
 
-LightSensor::LightSensor(uint8_t cEN, uint8_t scl, uint8_t sda) 
-    : sensor(cEN, scl, sda) {
+LightSensor::LightSensor(uint8_t scl, uint8_t sda) 
+    // first parameter is option, 0 is meaningless
+    : sensor(0, scl, sda) {
     // Constructor implementation
 }
 
